@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siber Güvenlik Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Siber Güvenlik Quiz 🧠</h1>
+
+    <section id="difficulty-container" class="difficulty-container">
+      <button onclick="startQuiz('easy')" class="btn btn-difficulty">Kolay</button>
+      <button onclick="startQuiz('medium')" class="btn btn-difficulty">Orta</button>
+      <button onclick="startQuiz('hard')" class="btn btn-difficulty">Zor</button>
+    </section>
+
+    <section id="quiz-container" class="quiz-container" style="display:none;">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <button id="next-btn" class="btn btn-next" style="display:none;">Sonraki</button>
+    </section>
+
+    <section id="result-container" class="result-container" style="display:none;">
+      <h2 id="score" class="score"></h2>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
